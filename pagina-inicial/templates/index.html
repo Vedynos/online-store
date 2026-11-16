@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Sapatilhas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Sapatilhas Store</div>
+        
+        <!-- Nova div agrupa a pesquisa e as ações -->
+        <div class="header-controls">
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar por marca, modelo...">
+                <button type="button">Pesquisar</button>
+            </div>
+
+            <div class="nav-actions">
+                <button type="button">🛒 Carrinho (0)</button>
+                <button type="button">Login / Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Catálogo de Sapatilhas</h2>
+        <p>Selecione um modelo para consultar os tamanhos e stock disponíveis.</p>
+        
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <a href="/produto/1">
+                    <img src="https://via.placeholder.com/600x400?text=Imagem+Sapatilha+1" alt="Modelo A">
+                    <h3>Nike Air Max</h3>
+                    <p>Referência: NK-AMX-01</p>
+                    <div class="product-price">120,00 €</div>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="/produto/2">
+                    <img src="https://via.placeholder.com/600x400?text=Imagem+Sapatilha+2" alt="Modelo B">
+                    <h3>Adidas Ultraboost</h3>
+                    <p>Referência: AD-ULT-02</p>
+                    <div class="product-price">160,00 €</div>
+                </a>
+            </div>
+            
+            <div class="product-card">
+                <a href="/produto/3">
+                    <img src="https://via.placeholder.com/600x400?text=Imagem+Sapatilha+3" alt="Modelo C">
+                    <h3>New Balance 550</h3>
+                    <p>Referência: NB-550-03</p>
+                    <div class="product-price">110,00 €</div>
+                </a>
+            </div>
+
+            <!-- Adicionado um quarto produto para preencher a grelha 2 a 2 de forma simétrica -->
+            <div class="product-card">
+                <a href="/produto/4">
+                    <img src="https://via.placeholder.com/600x400?text=Imagem+Sapatilha+4" alt="Modelo D">
+                    <h3>Puma RS-X</h3>
+                    <p>Referência: PU-RSX-04</p>
+                    <div class="product-price">105,00 €</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
